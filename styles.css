@@ -1,0 +1,235 @@
+:root{
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+@media (min-width: 800px){
+    body{
+        background-image: url(background.jpg);
+        background-size: 100%;
+    }
+    main{
+        /* TRouBLe */
+        padding: 2em 4em 1em 4em;
+        border-radius: 2em;
+    
+        max-width: 85vw;
+        margin-top: 3em;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3em;
+        background-color: white;
+    }
+
+    nav{
+        padding: initial !important;
+        box-shadow: none !important;
+    }
+
+    /*Name card styles*/
+    .name-card{
+        padding: 3em;
+        display: flex;
+    }
+    .name-card div + div{
+        margin-left: 2em;
+    }
+    
+    .dev-details{
+        /* border: 1px solid red; */
+        padding: 2em;
+        text-align: left !important;
+    }
+    /*Skill section*/
+    .skill-section{
+        border: 1px solid blue;
+    }
+    .skills{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 0.5em;
+    }
+    
+    /*School section*/
+    .school-section{
+        display: flex;
+        padding: 1em 3em 3em 3em;
+        flex-direction: initial !important;
+
+    }
+    .school-section .school + .school{
+        margin-left: 3em !important;
+        margin-top: initial !important;
+    }
+    
+    .sponsor-box{
+        flex-direction: initial !important;
+    }
+
+    .sponsor-box img + img{
+        margin-left: 4em;
+    }
+    .sponsor-box >img{
+        flex:1;
+        width: 20px;
+        height: 60px;
+        /* border: 1px solid red; */
+    }
+}
+/* _________________________________________________________________________ */
+@media (min-width: 375px){
+    /*Navbar */
+    body{
+        margin: 0;
+    }
+
+    nav{
+        padding-left: 1em;
+        padding-right: 1em;
+        padding-top: 1em;
+        padding-bottom: 0.1em;
+        box-shadow: 0 0.3rem 1rem 0 rgba(15, 15, 15, 0.2);
+
+    }
+
+    /*Name card*/
+    .name-card{
+        padding: 2em;
+    }
+    .image-box{
+        text-align: center;
+        margin-bottom: 2em;
+    }
+
+    .dev-details{
+        text-align: center;
+        /* border: 1px solid rgb(4, 0, 255); */
+
+    }
+    .school-section{
+        display: flex;
+        flex-direction: column;
+    }
+    .school-section .school + .school{
+        margin-top: 1em;
+    }
+    .sponsor-box{
+        flex-direction: column;
+    }
+
+}
+
+/*COMMON STYLES*/
+.image-box > img{
+    border: 1em;
+    border-radius: 50%;
+    height: 20.3em;
+    width: 20em;
+    border: 1em solid rgb(255, 255, 255);
+
+    box-shadow: 1rem 1rem 1rem 0 rgba(15, 15, 15, 0.2);
+
+}
+.site-nav{
+    display: flex;
+    list-style: none;
+    /* border: 1px solid red; */
+}
+.site-nav > li + li{
+    margin-left: 1em;
+}
+.site-nav > .yeet-left{
+    margin-left: auto;
+}
+.site-nav > .logo{
+    margin-left: -2.5em;
+    /* border: 1px solid black; */
+}
+.site-nav > li > a{
+    color: grey;
+    text-decoration: none;
+}
+.site-nav > li > a:hover{
+    color: black;
+}
+.site-nav > .logo > a > .nav-span{
+    padding: 0.3rem 0.6rem;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: white;
+    background-color: blue;
+}
+.site-nav > .logo > a {
+    color: black;
+    font-size: 1.2rem;
+}
+.site-nav > .logo > a > .nav-name{
+    font-weight: bolder;
+}
+.dev-details > span{
+    color: grey;
+}
+.dev-details > p{
+    color: grey;
+}
+.dev-details > .button{
+    margin-top: 3em;
+    padding: 1em 2em;
+    border:3px solid rgb(8, 8, 240);
+    border-radius: 2em;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+.dev-details > .button:hover{
+    border: 3px solid red;
+}
+.skillbox{
+    display: flex;
+    padding: 1em;
+}
+.skillbox img + div{
+    margin-left: 1em;
+}
+.skillbox > img{
+    width: 40px;
+    height: 40px;
+}
+.skill-inner> h3{
+    margin-top: 0;
+}
+h2{
+    margin-left: 0.3em;
+}
+
+
+.school{
+    flex: 1;
+    border: 2px solid rgb(216, 215, 215);
+    border-radius: 1em;
+    padding: 1em 1em 1em 2em;
+}
+.school > span{
+    display: block;
+}
+.coursecredential{
+    color: grey;
+}
+.school > p{
+    color: grey;
+}
+
+/*Sponsor box*/
+.sponsor-box{
+    display: flex;
+    padding: 2em;
+}
