@@ -70,14 +70,14 @@ body{
         margin-top: initial !important;
     }
     
-    .sponsor-box{
+    .sponyo{
         flex-direction: initial !important;
     }
 
-    .sponsor-box img + img{
+    .sponyo img + img{
         margin-left: 4em;
     }
-    .sponsor-box >img{
+    .sponyo >img{
         flex:1;
         width: 20px;
         height: 60px;
@@ -121,7 +121,7 @@ body{
     .school-section .school + .school{
         margin-top: 1em;
     }
-    .sponsor-box{
+    .sponyo{
         flex-direction: column;
     }
 
@@ -228,8 +228,7 @@ h2{
     color: grey;
 }
 
-/*Sponsor box*/
-.sponsor-box{
+.sponyo{
     display: flex;
     padding: 2em;
 }
